@@ -49,7 +49,7 @@ function Components() {
         <div className="container">
             <h1 className="text-center">Expense Tracker</h1>
 
-            <h3>Your Balance <br /> ${getIncome() + getExpense()}</h3>
+            <h2>Your Balance <br /> ${getIncome() + getExpense()}</h2>
 
             <div className="expense-container">
                 <h3 className='income'>INCOME <br /> ${getIncome()}</h3>
@@ -78,7 +78,7 @@ function Components() {
 
             <form className="transaction-form" onSubmit={handleAddition}>
                 <label>
-                    Enter Description <br />
+                    Description <br />
                     <input type="text"
                         value={newDesc}
                         placeholder="Enter Description..."
@@ -88,7 +88,7 @@ function Components() {
 
                 <br />
                 <label>
-                    Enter Amount <br />
+                    Amount <br />
                     <input type="number"
                         value={newAmount}
                         placeholder="Enter Amount..."
@@ -96,7 +96,7 @@ function Components() {
                         required />
                 </label>
                 <br />
-                <input type="submit" value="Add Transaction" />
+                <input className='submitButton' type="submit" value="Add Transaction" />
             </form>
             <hr />
             <center><footer>Made with {'\u2665'} by Hasnain Ali</footer></center>

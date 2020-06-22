@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-body {background-image: linear-gradient(to right, rgba(66, 201, 66, 0.5),  rgb(41, 105, 41));
+body {background-image: linear-gradient(to right, rgba(66, 201, 66, 0.7),  rgba(41, 105, 41,0.9));
   }
 
 .container{
@@ -17,11 +17,11 @@ body {background-image: linear-gradient(to right, rgba(66, 201, 66, 0.5),  rgb(4
 }
 
 .income {
-  color: rgba(200,0,0,1);
+  color: rgba(0,150,0,1);
 }
 
 .expense {
-  color: rgba(0,150,0,1);
+  color: rgba(200,0,0,1);
 }
 
 .text-center {
@@ -68,4 +68,17 @@ body {background-image: linear-gradient(to right, rgba(66, 201, 66, 0.5),  rgb(4
 }
 .del:hover {
   opacity: 1;
+}
+.submitButton {
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: green;
+}
+footer {
+  font-weight: bold;
+  font-family: Lato;
+  padding: 5px;
 }
