@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {background-image: linear-gradient(to right, rgba(66, 201, 66, 0.5),  rgb(41, 105, 41));
+  }
+
+.container{
+  font-family: Ubuntu, Lato, sans-serif;
+  max-width: 375px;
+  min-height: 500px;
+  margin: 0 auto;
+  background-color: #FFF;
+  box-shadow: 0 0 10px gray;
+  margin-top: 50px;
+  padding: 15px 50px;
+  border-radius: 10px;
+}
+
+.income {
+  color: rgba(200,0,0,1);
+}
+
+.expense {
+  color: rgba(0,150,0,1);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.expense-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: 0 0 10px gray;
+}
+
+.transaction-list {
+  margin: 0;
+  padding: 0;
+}
+
+.transaction-list > li {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 10px gray;
+  padding: 10px 15px;
+  background-color: white;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+
+.transaction-form input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px 5px;
+}
+
+.del{
+  position: relative;
+  background-color: lightcoral;
+  top: 35px;
+  right: 30px;
+  color: white;
+  cursor: pointer;
+  opacity: 0.1;
+  transition: opacity 0.3s ease;
+}
+.del:hover {
+  opacity: 1;
+}

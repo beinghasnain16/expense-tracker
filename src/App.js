@@ -1,13 +1,18 @@
 import React from 'react';
+
 import './App.css';
-import { Header } from './components/Header.js'
+
+import Components from './components';
+import {TransactionProvider} from './transContext';
+
 
 function App() {
-  return (
-    <div>
-      < Header />
-    </div>
-  );
+
+    return (
+      <TransactionProvider>
+          <Components />
+      </TransactionProvider>
+    );
 }
 
 export default App;
