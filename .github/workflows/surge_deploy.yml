@@ -42,4 +42,4 @@ jobs:
       
    # Delpoy to Surge
     - name: Delpoy React App to Surge
-      run: surge ./build expense.tracker.surge.sh --token ${{ sectrets.SURGE_TOKEN }} 
+      run: surge ./build expense.tracker.surge.sh --token ${{ secrets.SURGE_TOKEN }} 
