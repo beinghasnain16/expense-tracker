@@ -63,7 +63,7 @@ function Components() {
                 {transactions.map((transObj, ind) => {
                     return (<>
                     <button className='del' onClick={ () => handleDeletion(ind) }>X</button>
-                    <li key={ind} className={transObj.amount > 0 ? 'expense' : 'income'}>
+                    <li key={ind} className={transObj.amount < 0 ? 'expense' : 'income'}>
                         <span>{transObj.desc}</span>
                         <span>${transObj.amount}</span>
                     </li>
